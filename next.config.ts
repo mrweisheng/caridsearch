@@ -12,11 +12,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // 子路径部署配置 - 只在生产环境生效
-  ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/carcontant',
-    assetPrefix: '/carcontant',
-  }),
+  // 子路径部署配置
+  basePath: '/carcontant',
+  assetPrefix: '/carcontant',
 };
 
 export default nextConfig;
