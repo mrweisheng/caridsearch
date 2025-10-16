@@ -3,12 +3,13 @@
 import { useState } from 'react';
 import VehicleSearch from '@/components/VehicleSearch';
 import VehicleList from '@/components/VehicleList';
+import { Vehicle } from '@/types/vehicle';
 
 export default function Home() {
-  const [vehicles, setVehicles] = useState([]);
+  const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const handleSearch = (searchResults: any[]) => {
+  const handleSearch = (searchResults: Vehicle[]) => {
     setVehicles(searchResults);
   };
 
