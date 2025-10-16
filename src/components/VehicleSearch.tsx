@@ -24,7 +24,7 @@ export default function VehicleSearch({ onSearch, onLoading }: VehicleSearchProp
       const params = new URLSearchParams();
       params.append('id', vehicleId.trim());
 
-      const response = await fetch(`/api/vehicles/search?${params}`);
+      const response = await fetch(`/carcontant/api/vehicles/search?${params}`);
       const data = await response.json();
 
       if (data.success) {
