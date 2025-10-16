@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm run dev)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd:*)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []
